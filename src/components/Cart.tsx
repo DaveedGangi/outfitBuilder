@@ -17,10 +17,10 @@ const Cart=({outfits,removeItem}:{outfits:any[][];removeItem:(outfitIndex:number
                 (
                     outfits.map((outfit,outfitIndex)=>(
                         <div key={outfitIndex}
-                        className="flex items-center  mb-2">
+                        className="flex flex-col items-center  mb-2">
                             {
                                 outfit.map((item,itemIndex)=>(
-                                    <div className="flex justify-between items-center mt-3 w-100" key={itemIndex}>
+                                    <div className="flex flex-row justify-between items-center mt-3 w-40" key={itemIndex}>
                                     <div className="text-blue-500">{item.label}
                                     </div>
                                     <div>

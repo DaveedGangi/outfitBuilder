@@ -1,4 +1,7 @@
 
+
+
+
 const ClothingItem=({
                 imageSrc,
                 label,

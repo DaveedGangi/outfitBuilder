@@ -1,6 +1,8 @@
 import {useState,useEffect} from "react";
 
 
+
+
 import { Geist, Geist_Mono } from "next/font/google";
 import ClothingItem from "@/components/ClothingItem";
 import Canvas from "@/components/Canvas";
@@ -96,6 +98,7 @@ const handleSaveToLocal=(items:any[])=>{
 }
 
   return (
+   
     <div>
       <h1 className="text-center font-bold m-3 text-amber-800 text-4xl  text-shadow-amber-200 ">Outfit Builder </h1>
       <div className="flex  mt-12 text-center flex-row justify-around">
@@ -141,5 +144,7 @@ const handleSaveToLocal=(items:any[])=>{
 
 
     </div>
+
+   
   );
 }
