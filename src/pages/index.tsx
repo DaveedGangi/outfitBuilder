@@ -70,7 +70,7 @@ const handleAddCartOutfit=(newOutfit:any[])=>{
 
 const handleRemoveOutfit=(outfitIndex:number,itemIndex:number)=>{
   const updatedOutfits=[...outfits]
-  updatedOutfits[outfitIndex]=updatedOutfits[outfitIndex].filter((_,indexData)=>indexData!==itemIndex)
+  updatedOutfits[outfitIndex]=updatedOutfits[outfitIndex].filter((item:any,indexData:number)=>indexData!==itemIndex)
   
   const cleanedOutfits=updatedOutfits.filter((each)=>each.length>0);
   setOutfits(cleanedOutfits)
