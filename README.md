@@ -53,7 +53,25 @@ responsive added
 
 # Any additional instructions
 
-nothing
+if you want to try adding more outfits 
+simply saved outfits on your machine 
+drag into that public/images/ folder 
+
+after that go to the src/pages/index.tsx 
+you can see in that file related to this 
+you can add your image like this 
+
+const clothingItems=[
+    {
+      imageSrc:"/images/shirtimage1.png",
+      label:"Shirt",
+      position:"middle"
+    }]
+
+you can implement positon where you need to position on canvas 
+imageSrc place your imagepath 
+label give that outfit name 
+
 
 
 
